@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Validate password</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="input-control">
+        <div class="input-field">
+          <input type="password" name="password" id="password" autofocus />
+          <i class="bx bx-hide active"></i>
+          <i class="bx bx-show"></i>
+        </div>
+        <button>Submit</button>
+      </form>
+      <div class="require-list">
+        <span class="lowercase">
+          <i class="bx bx-x active"></i>
+          <i class="bx bx-check"></i> Lower-case </span
+        ><span class="uppercase">
+          <i class="bx bx-x active"></i>
+          <i class="bx bx-check"></i> Upper-case</span
+        ><span class="number">
+          <i class="bx bx-x active"></i> <i class="bx bx-check"></i>Number</span
+        >
+        <span class="special">
+          <i class="bx bx-x active"></i> <i class="bx bx-check"></i> At least
+          one special symbol</span
+        >
+        <span class="length">
+          <i class="bx bx-x active"></i> <i class="bx bx-check"></i> At least 8
+          characters</span
+        >
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

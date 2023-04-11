@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0);
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+.range {
+  width: 600px;
+  border: 1px solid #000;
+  height: 50px;
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: ew-resize;
+}
+
+.process {
+  background: #8a2387; /* fallback for old browsers */
+
+  background: linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100%;
+  font-size: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

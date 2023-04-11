@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dadada;
+}
+.image {
+  width: 70%;
+  user-select: none;
+}
+
+img {
+  width: 100%;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5);
+}
+
+.cursor {
+  width: 250px;
+  height: 250px;
+  position: fixed;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-size: 2000px 2000px;
+  background-image: url("./landscape.jpg");
+  pointer-events: none;
+  overflow: hidden;
+  cursor: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hide {
+  display: none;
+}

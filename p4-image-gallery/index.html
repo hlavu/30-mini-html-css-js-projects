@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Image gallery</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="wrapper">
+        <div class="img-container">
+          <img src="./assets/imgs/img1.jpg" alt="img1" />
+        </div>
+        <div class="img-container">
+          <img src="./assets/imgs/img2.jpg" alt="img2" />
+        </div>
+        <div class="img-container">
+          <img src="./assets/imgs/img3.jpg" alt="img3" />
+        </div>
+        <div class="img-container">
+          <img src="./assets/imgs/img4.jpg" alt="img4" />
+        </div>
+
+        <div class="img-container">
+          <img src="./assets/imgs/img5.jpg" alt="img5" />
+        </div>
+        <div class="img-container">
+          <img src="./assets/imgs/img6.jpg" alt="img6" />
+        </div>
+        <div class="img-container">
+          <img src="./assets/imgs/img7.jpg" alt="img7" />
+        </div>
+        <div class="img-container">
+          <img src="./assets/imgs/img8.jpg" alt="img8" />
+        </div>
+
+        <div class="img-container">
+          <img src="./assets/imgs/img9.jpg" alt="img9" />
+        </div>
+        <div class="img-container">
+          <img src="./assets/imgs/img10.jpg" alt="img10" />
+        </div>
+        <div class="img-container">
+          <img src="./assets/imgs/img11.jpg" alt="img11" />
+        </div>
+
+        <div class="img-container">
+          <img src="./assets/imgs/img12.jpg" alt="img12" />
+        </div>
+      </div>
+      <div class="gallery hidden">
+        <div class="gallery-content">
+          <span class="to-left hover-left" onclick="toLeft()"
+            ><i class="bx bx-chevron-left"></i
+          ></span>
+          <img id="target" src="./assets/imgs/img1.jpg" alt="selected image" />
+          <span class="close-img" onclick="closeImg()"
+            ><i class="bx bx-x"></i
+          ></span>
+
+          <span class="to-right hover-right" onclick="toRight()"
+            ><i class="bx bx-chevron-right"></i
+          ></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>

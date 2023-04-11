@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.carousel {
+  user-select: none;
+  height: 250px;
+  width: 80vw;
+  border: 1px solid #fff;
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  gap: 25px;
+  overflow: hidden;
+  overflow-x: auto;
+  cursor: pointer;
+}
+
+.carousel::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.item {
+  font-size: 60px;
+  color: #0f2027;
+  background: #b7c6ea;
+  text-align: center;
+  padding: 60px 70px;
+  font-weight: bold;
+}

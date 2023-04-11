@@ -1,0 +1,134 @@
+:root {
+  --facebook: #3b5998;
+  --twitter: #55acee;
+  --github: #171515;
+  --youtube: #cd201f;
+  --pinterest: #c8232c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d0d0d0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.icon {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+span {
+  display: block;
+}
+
+span > i {
+  font-size: 35px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transform: 0.3s;
+}
+
+.tooltip {
+  width: 120px;
+  padding: 8px 10px;
+  background: #fff;
+  border-radius: 25px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.facebook::before {
+  border-top: 10px solid var(--facebook);
+}
+
+.pinterest::before {
+  border-top: 10px solid var(--pinterest);
+}
+
+.github::before {
+  border-top: 10px solid var(--github);
+}
+.twitter::before {
+  border-top: 10px solid var(--twitter);
+}
+
+.youtube::before {
+  border-top: 10px solid var(--youtube);
+}
+
+.bx {
+  transition: 0.3s ease;
+}
+
+.bxl-facebook:hover,
+.facebook {
+  background: var(--facebook);
+  color: #fff;
+}
+
+.bxl-twitter:hover,
+.twitter {
+  background: var(--twitter);
+  color: #fff;
+}
+
+.bxl-pinterest:hover,
+.pinterest {
+  background: var(--pinterest);
+  color: #fff;
+}
+.bxl-github:hover,
+.github {
+  background: var(--github);
+  color: #fff;
+}
+
+.bxl-youtube:hover,
+.youtube {
+  background: var(--youtube);
+  color: #fff;
+}
+
+.icon:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  top: -60px;
+}

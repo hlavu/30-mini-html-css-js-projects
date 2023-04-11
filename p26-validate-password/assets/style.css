@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(-35deg, #bdc3c7 50%, #516e8b 50%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 450px;
+}
+
+.input-control {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.input-field {
+  width: 100%;
+  border: 1px solid #fff;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#password {
+  width: 90%;
+  padding: 5px 5px 5px 12px;
+  font-size: 22px;
+  outline: none;
+  border: none;
+}
+
+.bx-hide,
+.bx-show {
+  cursor: pointer;
+}
+
+.bx {
+  font-size: 20px;
+  display: none;
+}
+
+.bx.active {
+  display: inline;
+}
+
+button {
+  justify-self: end;
+  background: #192838;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.require-list {
+  margin-top: 20px;
+  background: #192838;
+  border-radius: 10px;
+  padding: 0px 20px;
+}
+
+.require-list > span {
+  display: flex;
+  padding: 10px 0;
+  font-size: 18px;
+  align-items: center;
+}
+
+span i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.satisfied {
+  color: rgba(255, 255, 255, 0.5);
+}

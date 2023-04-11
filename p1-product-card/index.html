@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Product card</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="card">
+        <div id="heart-icon" title="click me" onclick="handleHeartBtn()">
+          <i class="bx bx-heart"></i>
+        </div>
+        <div id="cart-icon">
+          <i class="bx bx-cart-alt"> </i>
+        </div>
+        <span id="items">0</span>
+        <div id="product-img">
+          <img src="./assets/imgs/product-img.png" alt="product image" />
+        </div>
+        <div id="product-desc">
+          <h1 class="product-name">Nike Zoom KD 12</h1>
+          <h1 class="product-price">$99</h1>
+        </div>
+        <div id="card-anim">
+          <h2 id="size">
+            Size:
+            <span>6</span><span>7</span><span>8</span><span>9</span>
+          </h2>
+          <h2 id="color">
+            Color:
+            <span id="green"></span>
+            <span id="red"></span>
+            <span id="black"></span>
+          </h2>
+          <div id="btn">
+            <button
+              title="click me"
+              onclick="alert('Sorry, the item is sold out. :<')"
+            >
+              Buy now
+            </button>
+            <button title="click me" onclick="itemsInCart()">Add cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function handleHeartBtn() {
+      const parent = document.getElementById("heart-icon");
+      const newChild = document.createElement("i");
+      const childClass = parent.firstElementChild.className;
+      parent.removeChild(parent.firstElementChild);
+      if (childClass === "bx bx-heart") {
+        newChild.className = "bx bxs-heart";
+        newChild.style.color = "#EB5353";
+      } else {
+        newChild.className = "bx bx-heart";
+        newChild.style.color = "#fff";
+      }
+      parent.appendChild(newChild);
+    }
+
+    function itemsInCart() {
+      const currentItems = document.getElementById("items").textContent;
+      document.getElementById("items").innerHTML = parseInt(currentItems) + 1;
+      if (parseInt(currentItems) > 9) {
+        document.getElementById("items").style.top = "1.8%";
+        document.getElementById("items").style.paddingBottom = "3px";
+        document.getElementById("items").style.paddingTop = "3px";
+      }
+      document.getElementById("items").style.visibility = "visible";
+    }
+  </script>
+</html>

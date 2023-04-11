@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Modal</title>
+  </head>
+  <body>
+    <button id="open-modal" title="Believe it or not">Click for a BION</button>
+    <div id="modal-container" class="hide">
+      <div id="modal">
+        <div id="modal-header">
+          <h2>Believe it or not</h2>
+          <span id="x-btn"><i class="bx bx-x"></i></span>
+        </div>
+        <div id="modal-content">
+          <h2>PIGS HAVE NO REAL APPRECIATION FOR THE SKY!</h2>
+          <p>
+            It is physically impossible for pigs to look up into the sky.
+            Because their bodies evolved in a way to prioritize finding food,
+            pigs necks don't bend enough to allow them to look up at the sky.
+
+            <a
+              id="source"
+              href="https://www.ripleys.com/weird-news/pigs-no-real-appreciation-sky/"
+              target="_blank"
+            >
+              Read more information.
+            </a>
+          </p>
+          <div id="pig-img">
+            <img src="./assets/imgs/pig.jpg" alt="a pig" />
+          </div>
+        </div>
+        <button id="close-btn">Close</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

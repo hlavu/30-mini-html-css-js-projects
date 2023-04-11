@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  background: #060802;
+  color: #ffc371;
+  overflow: hidden;
+}
+
+.text {
+  width: 85%;
+  margin: 250px auto;
+}
+
+h1 {
+  max-width: fit-content;
+  padding-right: 12px;
+  font-size: 70px;
+  text-align: center;
+  background: rgba(255, 195, 113, 0.2);
+  border-right: 8px solid #ffc371;
+  animation: typingAnim steps(33) infinite 4s, blink infinite 1s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+h4 {
+  color: #ff5f6d;
+  font-size: 35px;
+  padding: 5px;
+  margin-top: 50px;
+  max-width: fit-content;
+  background: rgba(255, 95, 109, 0.2);
+  border-right: 4px solid #ff5f6d;
+  animation: pinkBlink infinite 1s;
+}
+
+@keyframes typingAnim {
+  0%,
+  100% {
+    width: 0%;
+  }
+
+  80% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-right-color: #ffc371;
+  }
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes pinkBlink {
+  0%,
+  100% {
+    border-right-color: #ff5f6d;
+  }
+  50% {
+    border-right-color: transparent;
+  }
+}

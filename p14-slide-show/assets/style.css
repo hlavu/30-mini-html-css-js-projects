@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main {
+  width: 70%;
+  height: 90%;
+  margin: 25px auto;
+  box-shadow: 0px 0px 10px 1px rgb(240 255 255 / 60%);
+}
+
+.img-box {
+  height: 85%;
+  position: relative;
+}
+
+.img-show {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 45%;
+  font-size: 50px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.carousel {
+  display: flex;
+  background: #1f1c18;
+}
+
+.carousel div {
+  flex: 1;
+  padding: 5px;
+}
+
+.active {
+  background: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+  animation: zoomAnim 1s ease;
+}
+
+@keyframes zoomAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

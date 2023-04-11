@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  height: 100vh;
+  --secondaryColor: rgba(38, 71, 84, 0.2);
+  --bgColor: #102128;
+  --textColor: #dadada;
+  background: var(--bgColor);
+  color: var(--textColor);
+}
+
+body.light-mode {
+  --textColor: #102128;
+  --bgColor: #eee;
+  background: var(--bgColor);
+  color: var(--textColor);
+  --secondaryColor: rgba(192, 192, 192, 0.2);
+}
+
+header {
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.btn i {
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 25%;
+  background: var(--textColor);
+  color: var(--bgColor);
+  cursor: pointer;
+}
+
+.btn i:hover {
+  background: var(--secondaryColor);
+  color: var(--textColor);
+}
+
+.btn .bx {
+  display: none;
+}
+
+.bx.active {
+  display: block;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 150px auto;
+}
+
+.main h1 {
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.content {
+  background: var(--secondaryColor);
+  padding: 20px 30px 0;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0.5px solid var(--lightPrimary);
+  border: 1px solid var(--textColor);
+}
+
+.btn-gr {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  width: 120px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background: var(--textColor);
+  color: var(--bgColor);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.light-mode .bx {
+  display: block;
+}
+
+.light-mode .active {
+  display: none;
+}

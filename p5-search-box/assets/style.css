@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #4daf54, #3d8880);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box {
+  height: 65px;
+  width: 65px;
+  background: #1b1b2f;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.6s ease;
+}
+
+.search-btn {
+  position: absolute;
+  height: 65px;
+  width: 65px;
+  font-size: 30px;
+  text-align: center;
+  border: none;
+  outline: none;
+  top: 0;
+  right: 0;
+  padding-top: 8px;
+  padding-left: 2px;
+}
+
+.search-btn:hover {
+  background: #f0ece3;
+}
+
+.text-box {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 20px 100px 20px 20px;
+  font-size: 30px;
+  font-family: "Dosis", sans-serif;
+}
+
+.search-box.open {
+  width: 400px;
+}

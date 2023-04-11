@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #debace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.search-box {
+  background: #fff;
+  width: 600px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  min-height: fit-content;
+  margin: auto;
+}
+
+.search-box h2 {
+  margin-bottom: 20px;
+}
+
+.tags-box {
+  min-height: fit-content;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 2.5px;
+}
+
+.tags-box li {
+  list-style: none;
+  display: inline-block;
+  background: #975c8d;
+  color: #fff;
+  margin: 4px 2.5px;
+  padding: 10px 3px 10px 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.tags-box li i {
+  vertical-align: middle;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.tags-box input {
+  border: none;
+  color: gray;
+  font-size: 20px;
+  padding: 5px 2px;
+}
+
+.tags-box input:focus {
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  color: #282a3a;
+  background: #debace;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+
+.search-box button:hover {
+  background: #975c8d;
+  color: #fff;
+}

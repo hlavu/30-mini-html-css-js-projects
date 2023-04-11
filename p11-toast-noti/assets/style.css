@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #dadada;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 28px;
+  margin: 0 10px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.toast-list {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+}
+
+.toast {
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 25px 25px;
+  border-radius: 4px;
+  color: #fff;
+  animation: Slide 1s ease forwards;
+}
+
+.toast.success {
+  background: rgba(0, 128, 0, 0.4);
+  border-left: 6px solid green;
+}
+
+.toast.warning {
+  background: rgba(255, 165, 0, 0.4);
+  border-left: 6px solid orange;
+}
+
+.toast.error {
+  background: rgba(255, 0, 0, 0.4);
+  border-left: 6px solid red;
+}
+
+.toast .count-down {
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: Countdown 4s ease;
+}
+
+.toast.success .count-down,
+.success {
+  background: green;
+}
+
+.toast.warning .count-down,
+.warning {
+  background: orange;
+}
+
+.toast.error .count-down,
+.error {
+  background: red;
+}
+
+.toast i {
+  font-size: 30px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+@keyframes Countdown {
+  20% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes Slide {
+  0% {
+    transform: translateX(100%);
+  }
+  40% {
+    transform: translateX(-10%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes Hide {
+  0% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(200%);
+  }
+}

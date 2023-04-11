@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #2c3e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4ca1af,
+    #2c3e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4ca1af,
+    #2c3e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+
+.form {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+  width: 460px;
+  height: fit-content;
+  padding: 40px 50px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.form h1 {
+  margin: auto;
+  color: #2c3e50;
+}
+
+.form-control {
+  position: relative;
+  height: 60px;
+}
+
+.form-control input {
+  width: 100%;
+  border: none;
+  border-bottom: solid 2px #e5e5cb;
+  font-size: 18px;
+  padding: 4px 0;
+  outline: none;
+}
+
+.form-control.err input {
+  border-bottom: solid 2px rgba(207, 10, 10, 0.3);
+}
+.form-control input:focus ~ span {
+  width: 100%;
+}
+
+.err-msg {
+  display: none;
+}
+
+.form-control.err .err-msg {
+  display: block;
+  color: #cf0a0a;
+  margin-top: 2px;
+  font-size: 16px;
+}
+
+.form-control.err span {
+  bottom: 23px;
+}
+
+.form-control span {
+  width: 0%;
+  border-bottom: solid 2.5px #4ca1af;
+  position: absolute;
+  left: 0;
+  bottom: 23px;
+  transition: 0.3s;
+}
+
+.form button {
+  padding: 9px 0;
+  border-radius: 25px;
+  font-weight: 700;
+  border: none;
+  font-size: 20px;
+  background-color: #4ca1af;
+  color: #fff;
+}
+
+.form button:hover {
+  background: #2c3e50;
+}
+
+.form p {
+  margin: auto;
+  font-size: 18px;
+}
+
+.form p a {
+  text-decoration: none;
+}
+
+.form p a:hover {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+
+.success {
+  display: none;
+  border-radius: 20px;
+  padding: 20px;
+  width: 450px;
+  background: #fff;
+  text-align: center;
+  margin: auto;
+  color: #2c3e50;
+}
+
+.success p {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.success.show {
+  display: block;
+}

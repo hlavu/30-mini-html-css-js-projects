@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1>Register</h1>
+
+      <div class="form-control">
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          id="username"
+        />
+
+        <small class="err-msg"></small>
+        <span></span>
+      </div>
+
+      <div class="form-control">
+        <input type="email" name="email" id="email" placeholder="Email" />
+
+        <small class="err-msg"></small>
+        <span></span>
+      </div>
+
+      <div class="form-control">
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+
+        <small class="err-msg"></small>
+        <span></span>
+      </div>
+
+      <div class="form-control">
+        <input
+          type="password"
+          name="c-password"
+          id="password1"
+          placeholder="Confirm password"
+        />
+
+        <small class="err-msg"></small>
+        <span></span>
+      </div>
+
+      <button id="submitBtn">Login</button>
+      <p>Not a member? <a href="#">Signup</a></p>
+    </form>
+
+    <div class="success">
+      <h2></h2>
+      <p>Thank you for joining ^_^</p>
+      <img src="./assets/img/welcomee.gif" alt="welcome-gif" />
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+    url("./img/night.jpeg") no-repeat center/cover;
+}
+
+.container {
+  background: url("./img//night.jpeg") no-repeat center/cover;
+  height: 600px;
+  max-height: fit-content;
+  width: 380px;
+  padding: 25px 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+#search {
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  background: rgba(256, 256, 256, 0.4);
+  font-size: 20px;
+  border-radius: 0 25px 0 25px;
+  outline: none;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+#search::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#search:focus::placeholder {
+  color: rgba(0, 0, 0, 0.8);
+}
+#search:focus {
+  border-radius: 25px 0 25px 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.location {
+  font-size: 35px;
+  padding-top: 25px;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.9);
+  margin-top: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.time {
+  font-size: 20px;
+  margin: -5px auto 40px;
+  text-shadow: 1px 1px 2px #000;
+  width: 70%;
+}
+
+.temperature {
+  font-size: 60px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 4px 4px #000;
+  font-weight: 900;
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.9);
+}
+
+.feel-like {
+  margin-top: 25px;
+  display: block;
+}
+
+.state {
+  margin-top: 50px;
+  font-size: 35px;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.9);
+}
+
+.group-state {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group-state i {
+  font-size: 25px;
+}
+.visibility,
+.wind,
+.cloud {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.greeting {
+  margin-top: 370px;
+  text-shadow: 1.5px 1.5px #000;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+}
